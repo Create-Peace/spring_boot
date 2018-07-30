@@ -19,10 +19,10 @@ public class CalculationController {
 
     @RequestMapping("/power")
     public  sqrt_power power (@RequestParam(value = "base") String b, @RequestParam(value = "exponent") String e) {
-        List<String> input = new ArrayList();
+        List<String> input = new ArrayList<>();
         input.add(b);
         input.add(e);
-        List<String> output = new ArrayList();
+        List<String> output = new ArrayList<>();
         String powValue = "";
 
         if (b != null && e != null && b.matches(PATTERN) && e.matches(PATTERN)) {
